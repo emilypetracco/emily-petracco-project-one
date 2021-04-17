@@ -20,27 +20,53 @@
     <!-- header -->
     <header>
         <nav>
-            <div>
-                <h2>Planted</h2>
-            </div>
             <ul>
+                <li>Planted</li>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./index.html#about">About</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-
+        <h1>Get in Touch</h1>
     </header>
 
     <!-- main -->
     <main>
+        <aside>
+            <nav class="social-media">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+            <strong>info@email.com</strong>
+            <ul>
+                <li>123-456-7890</li>
+                <li>123 Queen Steet West, Unit 10</li>
+                <li>Toronto, Ontario</li>
+                <li>M5V 2D5</li>
+            </ul>
+        </aside>
+        <form>
+            <fieldset>
+                <label for="contact-name" class="sr-only"></label>Name</label>
+                <input type="text" name="name" id="contact-name" placeholder="Name">
+                <label for="contact-email-address" class="sr-only">Email Address</label>
+                <input type="email" name="email-address" id="contact-email-address" placeholder="Email Address">
+                <label for="contact-comment" class="sr-only">Comment</label>
+                <textarea name="comment" id="contact-comment" placeholder="Comment"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
 
     </main>
 
     <!-- footer -->
     <footer>
-
+        <span>Copyright © 2018 <a href="https://junocollege.com">Juno College</a></span>
     </footer>
 </body>
 </html>
