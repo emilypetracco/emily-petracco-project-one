@@ -276,6 +276,24 @@ body {
   text-transform: lowercase;
 }
 
+.index-page h2 {
+  font-size: 5.6rem;
+  letter-spacing: 1.3px;
+  text-align: center;
+}
+
+.about-section p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.index-page button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
 .blog-header,
 .contact-header {
   font-size: 6rem;
@@ -352,6 +370,60 @@ header.contact-page {
   width: 250px;
   margin-top: 350px;
   margin-left: 85px;
+}
+
+.index-page .about-section {
+  background-color: #F0EFED;
+  padding: 200px 0 150px;
+}
+
+.about-section p {
+  margin: 10px 180px;
+}
+
+.index-page button {
+  background-color: #0E902D;
+  border: none;
+  padding: 10px 20px;
+}
+
+.about-section button {
+  margin: 10px 540px;
+}
+
+.index-page button:hover {
+  background-color: #074115;
+}
+
+.blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.additional-info {
+  background-color: #F0EFED;
+}
+
+.about-the-founder {
+  background-color: #F0EFED;
+}
+
+footer {
+  background-color: #2C2C2C;
+  padding: 5px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+footer a:hover {
+  color: #F8E71C;
 }
 
 body,

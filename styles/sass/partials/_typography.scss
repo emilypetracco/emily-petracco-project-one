@@ -43,10 +43,31 @@ body {
     text-transform: lowercase;
 }
 
+.index-page h2 {
+    font-size: 5.6rem;
+    letter-spacing: 1.3px;
+    text-align: center;
+}
+
+.about-section p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.index-page button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: $white;
+}
+
 .blog-header,
 .contact-header {
     font-size: 6rem;
     color: $sunny-yellow;
 }
+
+
+
 
 

@@ -1,0 +1,40 @@
+// HOME PAGE STYLES
+
+.index-page .about-section {
+    background-color: $off-white;
+    padding: 200px 0 150px;
+}
+
+.about-section p {
+    margin: 10px 180px;
+}
+
+.index-page button {
+    background-color: $green;
+    border: none;
+    padding: 10px 20px;
+}
+
+.about-section button {
+    margin: 10px 540px;
+}
+
+.index-page button:hover {
+    background-color: $forest-green;
+}
+
+.blogs {
+    display: flex;
+}
+
+.additional-info {
+    background-color: $off-white;
+}
+
+.about-the-founder {
+    background-color: $off-white;
+}
+
+// BLOG PAGE STYLES
+
+// CONTACT PAGE STYLES

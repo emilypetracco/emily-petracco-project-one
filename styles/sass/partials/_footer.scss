@@ -1,0 +1,15 @@
+footer {
+    background-color: $off-black;
+    padding: 5px;
+    text-align: center;
+    // add to typography
+    color: $white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+    a {
+        color: $white;
+    }
+    a:hover {
+        color: $sunny-yellow;
+    }
+}
