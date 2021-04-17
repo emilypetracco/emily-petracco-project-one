@@ -36,17 +36,28 @@ header.index-page {
     background-color: black;
 }
 
+header.blog-page {
+    background-image: url(../assets/blog-header-1.jpg);
+    background-position: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
 .blog-header {
-    position: absolute;
-    top: 350px;
-    left: 85px;
+    margin-top: 340px;
+    margin-left: 85px;
 }
 
 // CONTACT PAGE STYLES
+header.contact-page {
+    background-image: url(../assets/contact-header-1.jpg);
+    background-position: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
 
 .contact-header {
     width: 250px;
-    position: absolute;
-    top: 400px;
-    left: 85px;
+    margin-top: 350px;
+    margin-left: 85px;
 }

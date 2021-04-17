@@ -26,6 +26,10 @@ body {
 }
 
 .nav-bar ul a:hover {
+    text-decoration: underline 2px $sunny-yellow;
+}
+
+.yellow-link {
     color: $sunny-yellow;
 }
 
@@ -44,4 +48,5 @@ body {
     font-size: 6rem;
     color: $sunny-yellow;
 }
+
 
