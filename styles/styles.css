@@ -369,6 +369,10 @@ body {
   color: #0E902D;
 }
 
+.aside-text-content li {
+  font-family: 'Roboto', sans-serif;
+}
+
 .blog-comments h4 {
   font-size: 3rem;
 }
@@ -387,6 +391,25 @@ form textarea {
 form button {
   font-family: 'Josefin Sans', sans-serif;
   color: #FFFFFF;
+}
+
+.social-media a {
+  color: #0E902D;
+}
+
+.social-media a:hover {
+  color: #074115;
+}
+
+.address {
+  font-family: 'Roboto', sans-serif;
+  line-height: 35px;
+}
+
+.contact-main form textarea,
+.contact-main form input {
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
 }
 
 header.index-page {
@@ -451,14 +474,15 @@ header.blog-page {
 header.contact-page {
   background-image: url(../assets/contact-header-1.jpg);
   background-position: cover;
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
 }
 
 .contact-header {
   width: 250px;
-  margin-top: 350px;
+  margin-top: 330px;
   margin-left: 85px;
+  padding-bottom: 30px;
 }
 
 .index-page .about-section {
@@ -528,6 +552,10 @@ header.contact-page {
   margin: 50px 0;
   -webkit-box-shadow: 15px 15px #F8E71C;
           box-shadow: 15px 15px #F8E71C;
+}
+
+.unique-plants p {
+  text-align: right;
 }
 
 .upcoming-workshops {
@@ -632,7 +660,7 @@ header.contact-page {
 }
 
 .main-blog-content aside .aside-text-content h2 {
-  padding: 20px 0;
+  padding: 20px 0 15px;
 }
 
 .main-blog-content aside .aside-text-content li {
@@ -698,19 +726,21 @@ article .blog-post p {
   padding-right: 30px;
 }
 
-form {
+article form {
   padding-bottom: 75px;
 }
 
-form input {
+article form input {
   background-color: #F0EFED;
   border: 1px solid #F0EFED;
   border-bottom: 1px solid #0E902D;
-  width: 35%;
+  width: 38%;
   padding: 15px 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-form textarea {
+article form textarea {
   background-color: #F0EFED;
   border: 1px solid #0E902D;
   margin: 20px 0;
@@ -719,15 +749,78 @@ form textarea {
   padding: 20px 30px;
 }
 
-form button {
+article form button {
   background-color: #0E902D;
   border: none;
   padding: 10px 0;
   width: 80%;
 }
 
-form button:hover {
+article form button:hover {
   background-color: #074115;
+}
+
+.contact-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F0EFED;
+  padding-bottom: 75px;
+}
+
+.contact-main form {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: -15px 15px #F8E71C;
+          box-shadow: -15px 15px #F8E71C;
+  padding: 75px 0 50px 50px;
+  margin-top: -160px;
+  margin-right: 80px;
+}
+
+.contact-main form input {
+  border: 1px solid #FFFFFF;
+  border-bottom: 1px solid #0E902D;
+  width: 320px;
+  padding: 15px 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-main form textarea {
+  border: 1px solid #0E902D;
+  margin: 20px 50px 20px 0;
+  width: 680px;
+  height: 200px;
+  padding: 20px 30px;
+}
+
+.contact-main form button {
+  background-color: #0E902D;
+  border: none;
+  padding: 10px 0;
+  width: 680px;
+}
+
+.contact-main form button:hover {
+  background-color: #074115;
+}
+
+.contact-main aside {
+  margin: 90px;
+}
+
+.social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-media ul li {
+  padding: 15px 15px 20px 0;
+}
+
+.address {
+  padding: 20px 0;
 }
 
 footer {

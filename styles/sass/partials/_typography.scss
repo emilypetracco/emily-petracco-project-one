@@ -130,6 +130,10 @@ body {
     }
 }
 
+.aside-text-content li {
+    font-family: 'Roboto', sans-serif;
+}
+
 .blog-comments {
     h4 {
         font-size: 3rem;
@@ -152,6 +156,27 @@ form {
     }
 }
 
+.social-media {
+    a {
+    color: $green;
+    }
+    a:hover {
+        color: $forest-green;
+    }
+}
+
+.address {
+    font-family: 'Roboto', sans-serif;
+    line-height: 35px;
+}
+
+.contact-main form {
+    textarea,
+    input {
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+    }
+}
 
 
 
