@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -282,22 +283,110 @@ body {
   text-align: center;
 }
 
-.about-section p {
-  font-family: 'Roboto', sans-serif;
-  line-height: 3.2rem;
-  text-align: center;
-}
-
 .index-page button {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   color: #FFFFFF;
 }
 
+.about-section p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
 .blog-header,
 .contact-header {
   font-size: 6rem;
   color: #F8E71C;
+}
+
+.blogs h3,
+.additional-info-text h3 {
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+}
+
+.blogs p,
+.additional-info-text p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+}
+
+.founder-container h4 {
+  font-size: 4.2rem;
+  letter-spacing: 1px;
+}
+
+.founder-container p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+}
+
+.blog-post h3 {
+  font-size: 4.3rem;
+  letter-spacing: 1.3px;
+}
+
+.blog-post span,
+.blog-post p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+}
+
+.blog-post span {
+  color: #074115;
+}
+
+.blog-post span a {
+  color: #074115;
+}
+
+.blog-post span a:hover {
+  color: #0E902D;
+}
+
+.blog-page aside h2,
+.blog-page .blog-comments h2 {
+  line-height: 32px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.blog-page aside p,
+.blog-page .blog-comments p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 32px;
+}
+
+.blog-page aside a,
+.blog-page .blog-comments a {
+  color: #074115;
+}
+
+.blog-page aside a:hover,
+.blog-page .blog-comments a:hover {
+  color: #0E902D;
+}
+
+.blog-comments h4 {
+  font-size: 3rem;
+}
+
+.blog-comments h2 {
+  color: #074115;
+}
+
+form input,
+form textarea {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+form button {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFFFFF;
 }
 
 header.index-page {
@@ -350,7 +439,7 @@ header.index-page {
 header.blog-page {
   background-image: url(../assets/blog-header-1.jpg);
   background-position: cover;
-  height: 100vh;
+  height: 1000px;
   background-repeat: no-repeat;
 }
 
@@ -399,14 +488,246 @@ header.contact-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogs div {
+  width: 45%;
+}
+
+.blogs h3 {
+  padding-bottom: 10px;
+}
+
+.blogs p {
+  width: 80%;
+}
+
+.blogs button {
+  margin-top: 30px;
+}
+
+.unique-plants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: -70px;
+  margin-left: -80px;
+}
+
+.unique-plants img {
+  margin: 50px 0;
+  -webkit-box-shadow: 15px 15px #F8E71C;
+          box-shadow: 15px 15px #F8E71C;
+}
+
+.upcoming-workshops {
+  margin: 75px -80px -80px 0;
+}
+
+.upcoming-workshops img {
+  margin: 50px 0;
+  -webkit-box-shadow: -15px -15px #F8E71C;
+          box-shadow: -15px -15px #F8E71C;
 }
 
 .additional-info {
   background-color: #F0EFED;
+  padding: 75px 0 60px;
+}
+
+.additional-info .additional-info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.additional-info .fas {
+  padding-top: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: #F8E71C;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.additional-info p {
+  padding: 15px 0px 30px 50px;
 }
 
 .about-the-founder {
   background-color: #F0EFED;
+  padding: 75px 0;
+}
+
+.founder-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.founder-container .text-container {
+  width: 50%;
+}
+
+.founder-container h4 {
+  padding-bottom: 20px;
+}
+
+.founder-container img {
+  -webkit-box-shadow: 15px 15px #F8E71C;
+          box-shadow: 15px 15px #F8E71C;
+}
+
+.founder-container button {
+  margin-top: 30px;
+}
+
+.gallery {
+  padding: 75px 0;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blog-page {
+  background-color: #F0EFED;
+}
+
+.main-blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -400px;
+}
+
+.main-blog-content aside img {
+  width: 75%;
+}
+
+.main-blog-content aside .aside-text-content {
+  margin: -375px 0 0 85px;
+  padding: 375px 10px 0 30px;
+  background-color: #FFFFFF;
+  width: 470px;
+  height: 775px;
+}
+
+.main-blog-content aside .aside-text-content h2 {
+  padding: 20px 0;
+}
+
+.main-blog-content aside .aside-text-content li {
+  padding: 5px 0;
+}
+
+.main-blog-content aside .aside-text-content li::before {
+  content: "•";
+  color: #0E902D;
+  padding-right: 10px;
+}
+
+.main-blog-content article {
+  margin-top: -300px;
+  width: 100%;
+}
+
+.main-blog-content article .blog-post {
+  -webkit-box-shadow: -5px 5px #F8E71C;
+          box-shadow: -5px 5px #F8E71C;
+}
+
+.main-blog-content article .main-blog-image {
+  -webkit-box-shadow: -20px 20px #F8E71C;
+          box-shadow: -20px 20px #F8E71C;
+}
+
+article .blog-post {
+  padding: 50px 0 30px 30px;
+  width: 85%;
+  margin-left: -15px;
+}
+
+article .blog-post .blog-content {
+  padding-top: 30px;
+}
+
+article .blog-post p {
+  padding: 10px 0;
+}
+
+.blog-comments {
+  padding-top: 50px;
+}
+
+.blog-comments h4 {
+  padding-bottom: 30px;
+}
+
+.jeremy-comment,
+.julia-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+  padding-right: 85px;
+}
+
+.jeremy-comment img,
+.julia-comment img {
+  width: 60%;
+  height: 60%;
+  padding-right: 30px;
+}
+
+form {
+  padding-bottom: 75px;
+}
+
+form input {
+  background-color: #F0EFED;
+  border: 1px solid #F0EFED;
+  border-bottom: 1px solid #0E902D;
+  width: 35%;
+  padding: 15px 30px;
+}
+
+form textarea {
+  background-color: #F0EFED;
+  border: 1px solid #0E902D;
+  margin: 20px 0;
+  width: 80%;
+  height: 200px;
+  padding: 20px 30px;
+}
+
+form button {
+  background-color: #0E902D;
+  border: none;
+  padding: 10px 0;
+  width: 80%;
+}
+
+form button:hover {
+  background-color: #074115;
 }
 
 footer {

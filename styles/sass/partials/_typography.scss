@@ -36,17 +36,23 @@ body {
 .home-header {
     font-size: 16rem;
     color: $white;
-}
-
-.home-header span {
+    span {
     color: $sunny-yellow;
     text-transform: lowercase;
+    }
 }
 
-.index-page h2 {
+.index-page {
+    h2 {
     font-size: 5.6rem;
     letter-spacing: 1.3px;
     text-align: center;
+    }
+    button {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+        color: $white;
+    }
 }
 
 .about-section p {
@@ -55,17 +61,97 @@ body {
     text-align: center;
 }
 
-.index-page button {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    color: $white;
-}
-
 .blog-header,
 .contact-header {
     font-size: 6rem;
     color: $sunny-yellow;
 }
+
+.blogs,
+.additional-info-text {
+    h3 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        line-height: 32px;
+    }
+}
+
+.founder-container {
+    h4 {
+        font-size: 4.2rem;
+        letter-spacing: 1px;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        line-height: 32px;
+    }
+}
+
+.blog-post {
+    h3 {
+        font-size: 4.3rem;
+        letter-spacing: 1.3px;
+    }
+    span,
+    p {
+        font-family: 'Roboto', sans-serif;
+        line-height: 32px;
+    }
+    span {
+        color: $forest-green;
+        a {
+            color: $forest-green;
+        }
+        a:hover {
+            color: $green;
+        }
+    }
+}
+
+.blog-page aside,
+.blog-page .blog-comments {
+    h2 {
+        line-height: 32px;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        line-height: 32px;
+    }
+    a {
+        color: $forest-green;
+    }
+    a:hover {
+        color: $green;
+    }
+}
+
+.blog-comments {
+    h4 {
+        font-size: 3rem;
+    }
+    h2 {
+        color: $forest-green;
+    }
+}
+
+form {
+    input,
+    textarea {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+    }
+    button {
+        font-family: 'Josefin Sans', sans-serif;
+        color: $white;
+    }
+}
+
 
 
 

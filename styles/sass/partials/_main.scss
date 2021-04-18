@@ -1,5 +1,4 @@
 // HOME PAGE STYLES
-
 .index-page .about-section {
     background-color: $off-white;
     padding: 200px 0 150px;
@@ -25,16 +24,193 @@
 
 .blogs {
     display: flex;
+    justify-content: space-between;
+    div {
+        width: 45%;
+    }
+    h3 {
+        padding-bottom: 10px;
+    }
+    p {
+        width: 80%;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
+
+.unique-plants {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -70px;
+    margin-left: -80px;
+    img {
+        margin: 50px 0;
+        box-shadow: 15px 15px $sunny-yellow;
+    }
+}
+
+.upcoming-workshops {
+    margin: 75px -80px -80px 0;
+    img {
+        margin: 50px 0;
+        box-shadow: -15px -15px $sunny-yellow;
+    }
 }
 
 .additional-info {
     background-color: $off-white;
+    padding: 75px 0 60px;
+    .additional-info-text {
+        display: flex;
+    }
+    .fas {
+        padding-top: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: $sunny-yellow;
+        border-radius: 50%;
+        text-align: center;
+    }
+    p {
+        padding: 15px 0px 30px 50px;
+    }
 }
 
 .about-the-founder {
     background-color: $off-white;
+    padding: 75px 0
+}
+
+.founder-container {
+    display: flex;
+    justify-content: space-evenly;
+    .text-container {
+        width: 50%
+    }
+    h4 {
+        padding-bottom: 20px;
+    }
+    img {
+        box-shadow: 15px 15px $sunny-yellow;
+    }
+    button {
+        margin-top: 30px;
+    }
+}
+
+.gallery {
+    padding: 75px 0;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 // BLOG PAGE STYLES
+
+.blog-page {
+    background-color: $off-white;
+}
+
+.main-blog-content {
+    display: flex;
+    margin-top: -400px;
+    aside {
+        img {
+            width: 75%;
+        }
+        .aside-text-content {
+            margin: -375px 0 0 85px;
+            padding: 375px 10px 0 30px;
+            background-color: $white;
+            width: 470px;
+            height: 775px;
+            h2 {
+                padding: 20px 0;
+            }
+            li {
+                padding: 5px 0;
+            }
+            li::before {
+                content: "•";
+                color: $green;
+                padding-right: 10px;
+                
+            }
+        }
+    }
+    article {
+        margin-top: -300px;
+        width: 100%;
+        .blog-post {
+            box-shadow: -5px 5px $sunny-yellow;
+        }
+        .main-blog-image {
+            box-shadow: -20px 20px $sunny-yellow;
+        }
+    }
+}
+
+article .blog-post {
+    padding: 50px 0 30px 30px;
+    width: 85%;
+    margin-left: -15px;
+    .blog-content {
+        padding-top: 30px;
+    }
+    p {
+        padding: 10px 0;
+    }
+}
+
+.blog-comments {
+    padding-top: 50px;
+    h4 {
+        padding-bottom: 30px;
+    }
+}
+
+.jeremy-comment,
+.julia-comment {
+    display: flex;
+    padding-bottom: 30px;
+    padding-right: 85px;
+    img {
+        width: 60%;
+        height: 60%;
+        padding-right: 30px;
+    } 
+}
+
+form {
+    input {
+        background-color: $off-white;
+        border: 1px solid $off-white;
+        border-bottom: 1px solid $green;
+        width: 35%;
+        padding: 15px 30px;
+    }
+    textarea {
+        background-color: $off-white;
+        border: 1px solid $green;
+        margin: 20px 0;
+        width: 80%;
+        height: 200px;
+        padding: 20px 30px;
+    }
+    button {
+        background-color: $green;
+        border: none;
+        padding: 10px 0;
+        width: 80%;
+    }
+    button:hover {
+        background-color: $forest-green;
+    }
+    padding-bottom: 75px;
+}
+
 
 // CONTACT PAGE STYLES
