@@ -433,6 +433,45 @@ header.index-page {
   padding-top: 20px;
 }
 
+.hamburger-button {
+  background-color: #ffffff00 !important;
+  padding: 15px;
+  font-size: 3rem;
+  border: none;
+}
+
+.dropdown-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff00;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #F8E71C;
+}
+
+.dropdown-nav:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-nav {
+  display: none;
+}
+
 .home-header {
   position: relative;
   display: -webkit-box;
@@ -487,7 +526,8 @@ header.contact-page {
 
 .index-page .about-section {
   background-color: #F0EFED;
-  padding: 200px 0 150px;
+  padding: 150px 0 150px;
+  margin-top: -70px;
 }
 
 .about-section p {
@@ -498,10 +538,8 @@ header.contact-page {
   background-color: #0E902D;
   border: none;
   padding: 10px 20px;
-}
-
-.about-section button {
-  margin: 10px 540px;
+  display: block;
+  margin: 20px auto;
 }
 
 .index-page button:hover {
@@ -566,6 +604,10 @@ header.contact-page {
   margin: 50px 0;
   -webkit-box-shadow: -15px -15px #F8E71C;
           box-shadow: -15px -15px #F8E71C;
+}
+
+.hidden-image {
+  display: none;
 }
 
 .additional-info {
@@ -838,6 +880,263 @@ footer a {
 
 footer a:hover {
   color: #F8E71C;
+}
+
+@media (max-width: 1080px) {
+  .home-header {
+    margin-left: 250px;
+  }
+  .blogs {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .blogs div {
+    width: 40%;
+  }
+  .additional-info .additional-info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  .main-blog-content aside .aside-text-content {
+    width: 400px;
+  }
+  .contact-main form {
+    margin-top: 30px;
+    padding: 30px 0px 30px 20px;
+  }
+  .contact-main form textarea {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 940px) {
+  .nav-bar ul {
+    width: 80%;
+  }
+  .home-header {
+    margin-left: 100px;
+  }
+  .header-image {
+    display: none;
+  }
+  .index-page .about-section {
+    padding: 50px 0 50px;
+  }
+  .blogs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .blogs div {
+    width: 80%;
+  }
+  .unique-plants,
+  .upcoming-workshops {
+    margin-left: 50px;
+  }
+  .desktop-image {
+    display: none;
+  }
+  .hidden-image {
+    display: block;
+  }
+  .upcoming-workshops {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .main-blog-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-blog-content aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-blog-content aside img {
+    width: 90%;
+    margin-left: 10px;
+    -webkit-box-shadow: 10px 10px #F8E71C;
+            box-shadow: 10px 10px #F8E71C;
+  }
+  .main-blog-content aside .aside-text-content {
+    margin: 0px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+  }
+  .main-blog-content article {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .main-blog-content article img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-blog-content article .blog-comments {
+    margin-left: 50px;
+  }
+  .contact-main form {
+    padding: 30px 50px;
+  }
+  .contact-main form input {
+    width: 225px;
+  }
+  .contact-main form textarea {
+    width: 500px;
+  }
+  .contact-main form button {
+    width: 500px;
+  }
+  .contact-main aside {
+    margin: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar ul {
+    display: none;
+  }
+  .dropdown-nav {
+    display: inline-block;
+  }
+  .home-header {
+    font-size: 11rem;
+  }
+  .about-section p {
+    width: 90%;
+    margin: 20px 30px;
+  }
+  .founder-container p {
+    width: 100%;
+  }
+  .founder-container img {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .gallery {
+    padding: 25px 0;
+  }
+  .blog-header {
+    font-size: 7rem;
+    margin-top: 275px;
+  }
+  .blog-page .hamburger-button,
+  .contact-page .hamburger-button {
+    color: #FFFFFF;
+  }
+  .blog-page .dropdown-content,
+  .contact-page .dropdown-content {
+    background-color: #074115;
+  }
+  .blog-page .dropdown-content a:hover,
+  .contact-page .dropdown-content a:hover {
+    background-color: #0E902D;
+  }
+  .contact-header {
+    font-size: 7rem;
+    margin-top: 200px;
+  }
+  .contact-main form {
+    padding: 20px 40px;
+  }
+  .contact-main form input {
+    width: 300px;
+  }
+  .contact-main form textarea {
+    width: 300px;
+  }
+  .contact-main form button {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    font-size: 8rem;
+    margin-left: 50px;
+  }
+  .index-page h2 {
+    font-size: 4rem;
+  }
+  .founder-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .founder-container .text-container {
+    width: 90%;
+  }
+  .founder-container h4 {
+    padding-top: 50px;
+  }
+  .founder-container img {
+    width: 100%;
+    margin-top: 0;
+  }
+  .gallery {
+    padding: 10px 0;
+  }
+  .blog-header {
+    font-size: 8rem;
+    margin-top: 150px;
+    margin-left: 135px;
+  }
+  aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  aside img {
+    margin-bottom: 50px;
+  }
+  article .blog-content p {
+    margin-left: 20px;
+  }
+  article form input {
+    width: 80%;
+  }
+  .contact-header {
+    margin-top: 100px;
+    margin-left: 130px;
+    padding-bottom: 100px;
+  }
+  .contact-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-main .social-media ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-main aside {
+    margin: 0;
+    text-align: center;
+  }
+  .contact-main form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 30px 80px;
+  }
 }
 
 body,

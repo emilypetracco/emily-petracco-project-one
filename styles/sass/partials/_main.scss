@@ -1,7 +1,8 @@
 // HOME PAGE STYLES
 .index-page .about-section {
     background-color: $off-white;
-    padding: 200px 0 150px;
+    padding: 150px 0 150px;
+    margin-top: -70px;
 }
 
 .about-section p {
@@ -12,10 +13,8 @@
     background-color: $green;
     border: none;
     padding: 10px 20px;
-}
-
-.about-section button {
-    margin: 10px 540px;
+    display: block;
+    margin: 20px auto;
 }
 
 .index-page button:hover {
@@ -60,6 +59,10 @@
         margin: 50px 0;
         box-shadow: -15px -15px $sunny-yellow;
     }
+}
+
+.hidden-image {
+    display: none;
 }
 
 .additional-info {
