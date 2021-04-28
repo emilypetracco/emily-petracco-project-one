@@ -433,42 +433,56 @@ header.index-page {
   padding-top: 20px;
 }
 
-.hamburger-button {
-  background-color: #ffffff00 !important;
-  padding: 15px;
-  font-size: 3rem;
-  border: none;
-}
-
-.dropdown-nav {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
+  background-color: #074115;
+  width: 25%;
+  height: 100vh;
   display: none;
-  position: absolute;
-  background-color: #ffffff00;
-  min-width: 160px;
-  z-index: 1;
 }
 
-.dropdown-content a {
-  padding: 12px 16px;
+.dropdown-content ul {
+  overflow: hidden;
+  list-style-type: none;
+  padding-top: 50%;
+  margin: 0;
+}
+
+.dropdown-content li {
+  display: block;
+  margin: 0;
+  padding: 5px 50px;
+  width: 100%;
+}
+
+.dropdown-content li a {
+  color: #F0EFED;
+  text-decoration: none;
   font-size: 2rem;
+}
+
+.dropdown-content li:hover {
+  cursor: pointer;
+  background-color: #074115;
+  letter-spacing: 10px;
+}
+
+.fa-bars {
   color: #FFFFFF;
+  font-size: 3rem;
+}
+
+.downdown-content {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.downdown-content.active {
   display: block;
+  -webkit-animation: fade .5s;
+          animation: fade .5s;
 }
 
-.dropdown-content a:hover {
-  background-color: #F8E71C;
-}
-
-.dropdown-nav:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-nav {
+.hamburger-button {
   display: none;
 }
 
@@ -1008,7 +1022,7 @@ footer a:hover {
   .nav-bar ul {
     display: none;
   }
-  .dropdown-nav {
+  .hamburger-button {
     display: inline-block;
   }
   .home-header {
